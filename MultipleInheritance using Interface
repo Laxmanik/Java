@@ -1,0 +1,49 @@
+interface Z
+{
+	void Print();
+}
+
+interface B
+{
+	void draw();
+}
+
+interface C
+{
+	void erase();
+}
+
+class D
+{
+	void write()
+	{
+		System.out.println("Writing");
+	}
+}
+
+class E extends D implements Z,B,C {
+public void Print()
+{
+	System.out.println("Writing");
+}
+public void draw()
+{
+	System.out.println("drawing");
+}
+public void erase()
+{
+	System.out.println("erasing");
+}
+}
+
+public class MultipleInheritance
+{
+	public static void main(String[] args)
+	{
+		E obj=new E();
+		obj.Print();
+		obj.draw();
+		obj.erase();
+		obj.write();
+	}
+}

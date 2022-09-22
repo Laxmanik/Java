@@ -1,0 +1,16 @@
+//Java Program to Swap two Numbers
+
+import java.util.Scanner;
+class SwapNumbers {
+    public static void main(String[] args) {
+        int a, b, temp=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two numbers a&b:");
+        a=sc.nextInt();
+        b=sc.nextInt();
+        temp=a;
+        a=b;
+        b=temp;
+        System.out.println("a="+a+" b="+b);
+    }
+}
